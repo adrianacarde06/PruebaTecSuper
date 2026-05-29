@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   pruebatecnicasupermercado: #nombre de la app establecido en application.properties
     build: PruebaTecnicaSupermercado 
