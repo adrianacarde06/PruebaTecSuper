@@ -2,7 +2,7 @@ version: '3'
 
 services:
   pruebatecnicasupermercado: #nombre de la app establecido en application.properties
-    build: PruebaTecnicaSupermercado #nombre de la carpeta donde está el DockerFile
+    build: PruebaTecnicaSupermercado 
     mem_limit: 512m
     ports:
       - "8080:8080"
@@ -15,7 +15,7 @@ services:
       pruebatecsuper:
           condition: service_healthy
   pruebatecsuper: #configuraciones de base de datos dockerizada
-    image: mysql:8.0.33 #misma versión que esté en el pom
+    image: mysql:8.0.33 
     ports:
       - "3307:3306"
     environment:
